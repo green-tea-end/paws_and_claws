@@ -1,0 +1,34 @@
+.content {
+  display: flex;
+  background: #000000;
+}
+
+.img_dog {
+  width: 50%;
+}
+
+.intro_text {
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+}
+
+.intro_text_1 {
+  font-weight: 700;
+  font-size: 5em;
+  padding: 10% 10% 0;
+
+}
+
+.pr {
+  text-decoration: underline;
+  text-underline-offset: 30%;
+  text-decoration-thickness: 4px;
+}
+
+.intro_text_2 {
+  font-size: 2em;
+  padding: 5% 10% 0;
+}
