@@ -4,13 +4,15 @@ header {
   background: #FFFFFF;
   padding: 15px 0 15px;
   box-shadow: 0 4px 6px #b7b7b7;
+  position: relative;
+  z-index: 10;
   align-items: center;
 }
 
 .logo {
   display: inline-flex;
   margin: 0 0 0 7px;
-  gap: 8px;
+  gap: 0.6rem;
 }
 
 .name_logo {
@@ -25,19 +27,20 @@ header {
 
 .menu {
   display: flex;
+  gap: 1rem;
+}
+
+.menu_item {
+  display: flex;
   list-style: none;
+  gap: 0.3rem;
 }
 
-li {
-  margin-right: 20px;
-}
-
-a, .Icon, .logoIcon {
+.Icon, .logoIcon {
   color: #523d15;
-  transition: color 0.2s;
+}
 
-
-  &:hover {
-    color: #d8a860;
-  }
+.account {
+  display: flex;
+  list-style: none;
 }
