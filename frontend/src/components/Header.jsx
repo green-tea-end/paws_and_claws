@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { IoPaw } from "react-icons/io5";
 import { FaHome } from "react-icons/fa";
 import { FaStore } from "react-icons/fa";
@@ -12,17 +13,17 @@ export default function Header() {
     <header>
       <div className={styles.logo}>
         <IoPaw className={styles.logoIcon} />
-        <a href="/" className={styles.name_logo}>Paws and Claws</a>
+        <Link to="/" className={styles.name_logo}>Paws and Claws</Link>
       </div>
 {/*       <button className='menu-button'>☰</button> */}
       <nav className={styles.menu}>
         <ul className={styles.menu_item}>
           <li><FaHome className={styles.Icon} /></li>
-          <li><a href="/">HOME</a></li>
+          <li><Link to="/">HOME</Link></li>
         </ul>
         <ul className={styles.menu_item}>
           <li><FaStore className={styles.Icon} /></li>
-          <li><a href="/store">STORE</a></li>
+          <li><Link to="/table">STORE</Link></li>
         </ul>
         <ul className={styles.menu_item}>
           <li><BsInfoCircleFill className={styles.Icon} /></li>

@@ -3,8 +3,6 @@ footer {
   background: #ffffff;
   text-align: center;
   box-shadow: 0 -4px 6px -1px #b7b7b7;
-  position: relative;
-  z-index: 10;
 }
 
 p {

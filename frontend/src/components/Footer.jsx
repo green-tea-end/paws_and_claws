@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styles from '../styles/Footer.module.css';
 
 export default function Footer() {
@@ -5,8 +6,8 @@ export default function Footer() {
 		<footer>
 			<nav>
 				<ul>
-					<li><a className={styles.footer_item} href="#">Home</a></li>
-					<li><a className={styles.footer_item} href="#">Store</a></li>
+                    <li><Link to="/" className={styles.footer_item}>Home</Link></li>
+                    <li><Link to="/table" className={styles.footer_item}>Store</Link></li>
 					<li><a className={styles.footer_item} href="#">About</a></li>
 					<li><a className={styles.footer_item} href="#">Contact</a></li>
 				</ul>
