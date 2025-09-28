@@ -12,7 +12,7 @@ export default function Footer() {
 					<li><Link to="/contact" className={styles.footer_item}>Contact</Link></li>
 				</ul>
 			</nav>
-			<p>Copyright © 2025 All rights reserved - Paws and Claws</p>
+			<p className={styles.p}>Copyright © 2025 All rights reserved - Paws and Claws</p>
 		</footer>
 	);
 }
