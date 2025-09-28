@@ -23,7 +23,7 @@ export default function Header() {
         </ul>
         <ul className={styles.menu_item}>
           <li><FaStore className={styles.Icon} /></li>
-          <li><Link to="/table">STORE</Link></li>
+          <li><Link to="/table">QUIZ</Link></li>
         </ul>
         <ul className={styles.menu_item}>
           <li><BsInfoCircleFill className={styles.Icon} /></li>
@@ -31,7 +31,8 @@ export default function Header() {
         </ul>
         <ul className={styles.menu_item}>
           <li><IoMdContacts className={styles.Icon} /></li>
-          <li><a href="#">CONTACT</a></li>
+          <li><Link to="/contact">CONTACT</Link></li>
+{/*           <li><a href="#">CONTACT</a></li> */}
         </ul>
       </nav>
 

@@ -1,6 +1,7 @@
 .content {
   display: flex;
   background: #000000;
+
 }
 
 .img_dog {
@@ -13,6 +14,7 @@
   color: #FFFFFF;
   font-family: "Roboto", sans-serif;
   width: 50%;
+  padding-bottom: 1rem;
 }
 
 .intro_text_1 {

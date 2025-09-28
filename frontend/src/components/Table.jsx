@@ -3,6 +3,7 @@ import styles from '../styles/Table.module.css';
 export default function Table() {
     return (
         <div>
+            <h2 className={styles.table_title}>Our Products & Services</h2>
             <table>
                 <tbody>
                     <tr>

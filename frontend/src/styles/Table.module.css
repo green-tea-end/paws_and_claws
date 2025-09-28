@@ -1,9 +1,17 @@
+.table_title {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    color: #523d15;
+    font-family: Tahoma, sans-serif;
+}
+
 table {
   display: flex;
   justify-content: center;
   width: 75%;
   border-collapse: collapse;
-  margin: 3rem auto;
+  margin: 1rem auto 3rem;
   color: #523d15;
 }
 

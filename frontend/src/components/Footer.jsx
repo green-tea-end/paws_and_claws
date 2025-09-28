@@ -7,9 +7,9 @@ export default function Footer() {
 			<nav>
 				<ul>
                     <li><Link to="/" className={styles.footer_item}>Home</Link></li>
-                    <li><Link to="/table" className={styles.footer_item}>Store</Link></li>
+                    <li><Link to="/table" className={styles.footer_item}>Quiz</Link></li>
 					<li><a className={styles.footer_item} href="#">About</a></li>
-					<li><a className={styles.footer_item} href="#">Contact</a></li>
+					<li><Link to="/contact" className={styles.footer_item}>Contact</Link></li>
 				</ul>
 			</nav>
 			<p>Copyright © 2025 All rights reserved - Paws and Claws</p>
