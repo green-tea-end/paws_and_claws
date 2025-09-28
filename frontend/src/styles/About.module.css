@@ -1,0 +1,129 @@
+.about {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    font-family: Tahoma, sans-serif;
+    color: #523d15;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #523d15;
+}
+
+/* Для варианта 1 */
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.text_section {
+    background: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #d8a860;
+}
+
+.text_section h2 {
+    color: #523d15;
+    margin-bottom: 1rem;
+}
+
+.text_section ul {
+    padding-left: 1.5rem;
+}
+
+.text_section li {
+    margin-bottom: 0.5rem;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.feature {
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Для варианта 2 */
+.team_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.team_card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: #d8a860;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin: 0 auto 1rem;
+}
+
+.role {
+    color: #d8a860;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* Для варианта 3 */
+.faq_section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq_item {
+    margin-bottom: 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq_question {
+    width: 100%;
+    padding: 1rem;
+    background: #f9f9f9;
+    border: none;
+    text-align: left;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #523d15;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq_answer {
+    padding: 1rem;
+    background: white;
+    border-top: 1px solid #e0e0e0;
+}
+
+.arrow {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

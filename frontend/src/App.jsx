@@ -5,6 +5,7 @@ import MainContent from './components/MainContent'
 import ContactForm from './components/ContactForm'
 import Table from './components/Table'
 import Quiz from './components/Quiz'
+import About from './components/About'
 import Footer from './components/Footer'
 import styles from './styles/App.module.css';
 
@@ -18,6 +19,7 @@ export default function App() {
                       <Route path="/" element={<MainContent />} />
                       <Route path="/table" element={<><Quiz /> <Table /></>} />
                       <Route path="/contact" element={<ContactForm />} />
+                      <Route path="/about" element={<About />} />
                   </Routes>
               </div>
               <Footer />

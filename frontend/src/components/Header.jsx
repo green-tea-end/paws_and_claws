@@ -27,12 +27,11 @@ export default function Header() {
         </ul>
         <ul className={styles.menu_item}>
           <li><BsInfoCircleFill className={styles.Icon} /></li>
-          <li><a href="#">ABOUT</a></li>
+          <li><Link to="/about">ABOUT</Link></li>
         </ul>
         <ul className={styles.menu_item}>
           <li><IoMdContacts className={styles.Icon} /></li>
           <li><Link to="/contact">CONTACT</Link></li>
-{/*           <li><a href="#">CONTACT</a></li> */}
         </ul>
       </nav>
 

@@ -8,7 +8,7 @@ export default function Footer() {
 				<ul>
                     <li><Link to="/" className={styles.footer_item}>Home</Link></li>
                     <li><Link to="/table" className={styles.footer_item}>Quiz</Link></li>
-					<li><a className={styles.footer_item} href="#">About</a></li>
+					<li><Link to="/about" className={styles.footer_item}>About</Link></li>
 					<li><Link to="/contact" className={styles.footer_item}>Contact</Link></li>
 				</ul>
 			</nav>
