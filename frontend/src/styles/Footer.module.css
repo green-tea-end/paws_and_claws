@@ -7,6 +7,7 @@ footer {
 
 .p {
   padding: 20px 0 0;
+  font-size: 1rem;
 }
 
 li {
@@ -16,4 +17,103 @@ li {
 
 .footer_item {
   color: #000000;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 1024px) {
+  footer {
+    padding: 1.8rem 0;
+  }
+
+  .p {
+    padding: 18px 0 0;
+    font-size: 1.1rem; /* 🔹 УВЕЛИЧИВАЕМ */
+  }
+
+  .footer_item {
+    font-size: 1.1rem; /* 🔹 УВЕЛИЧИВАЕМ */
+  }
+}
+
+/* 🔹 АДАПТИВНОСТЬ ДЛЯ БОЛЬШИХ ТЕЛЕФОНОВ (481px - 767px) */
+@media (max-width: 767px) {
+  footer {
+    padding: 1.5rem 20px; /* 🔹 ДОБАВЛЯЕМ PADDING ПО БОКАМ */
+  }
+
+  .p {
+    padding: 15px 0 0;
+    font-size: 1.2rem; /* 🔹 ЕЩЕ БОЛЬШЕ */
+    line-height: 1.4;
+  }
+
+  li {
+    padding: 0 0.4rem 0 0;
+    display: inline-block;
+    margin-bottom: 0.3rem;
+  }
+
+  .footer_item {
+    font-size: 1.2rem; /* 🔹 ЕЩЕ БОЛЬШЕ */
+    padding: 0.3rem 0.5rem; /* 🔹 УВЕЛИЧИВАЕМ ОБЛАСТЬ КЛИКА */
+  }
+}
+
+/* 🔹 АДАПТИВНОСТЬ ДЛЯ МАЛЕНЬКИХ ТЕЛЕФОНОВ (до 480px) */
+@media (max-width: 480px) {
+  footer {
+    padding: 1.2rem 15px;
+  }
+
+  .p {
+    padding: 12px 0 0;
+    font-size: 1.3rem; /* 🔹 ЗНАЧИТЕЛЬНО УВЕЛИЧИВАЕМ */
+    line-height: 1.5;
+  }
+
+  li {
+    padding: 0 0.3rem 0 0;
+    display: block; /* 🔹 ССЫЛКИ В КОЛОНКУ */
+    margin-bottom: 0.5rem;
+  }
+
+  .footer_item {
+    font-size: 1.3rem; /* 🔹 ЗНАЧИТЕЛЬНО УВЕЛИЧИВАЕМ */
+    padding: 0.5rem 0.8rem;
+    display: inline-block;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease;
+  }
+
+  .footer_item:hover {
+    background-color: #f0f0f0;
+  }
+
+  /* 🔹 ДЕЛАЕМ ССЫЛКИ В ФУТЕРЕ В КОЛОНКУ */
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* 🔹 АДАПТИВНОСТЬ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ (до 320px) */
+@media (max-width: 320px) {
+  footer {
+    padding: 1rem 10px;
+  }
+
+  .p {
+    padding: 10px 0 0;
+    font-size: 1.2rem; /* 🔹 ОПТИМАЛЬНЫЙ РАЗМЕР ДЛЯ МАЛЕНЬКИХ ЭКРАНОВ */
+    line-height: 1.6;
+  }
+
+  .footer_item {
+    font-size: 1.2rem; /* 🔹 ОПТИМАЛЬНЫЙ РАЗМЕР */
+    padding: 0.6rem 1rem;
+    width: 90%;
+    text-align: center;
+  }
 }

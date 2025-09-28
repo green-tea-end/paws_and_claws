@@ -1,11 +1,13 @@
 .content {
   display: flex;
   background: #000000;
-
+  flex: 1;
 }
 
 .img_dog {
   width: 50%;
+  height: auto;
+  object-fit: cover;
 }
 
 .intro_text {
@@ -15,13 +17,13 @@
   font-family: "Roboto", sans-serif;
   width: 50%;
   padding-bottom: 1rem;
+  justify-content: center;
 }
 
 .intro_text_1 {
   font-weight: 700;
   font-size: 5em;
   padding: 10% 10% 0;
-
 }
 
 .pr {
@@ -34,3 +36,117 @@
   font-size: 2em;
   padding: 5% 10% 0;
 }
+
+
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: row; /* 🔹 СОХРАНЯЕМ РЯДОМ */
+  }
+
+  .intro_text_1 {
+    font-size: 3.5em;
+    padding: 8% 8% 0;
+  }
+
+  .intro_text_2 {
+    font-size: 1.6em;
+    padding: 4% 8% 0;
+  }
+
+  .pr {
+    text-underline-offset: 25%;
+    text-decoration-thickness: 3px;
+  }
+}
+
+/* 🔹 АДАПТИВНОСТЬ ДЛЯ БОЛЬШИХ ТЕЛЕФОНОВ (481px - 767px) */
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column; /* 🔹 ПЕРЕСТАНОВКА В КОЛОНКУ */
+    min-height: auto;
+  }
+
+  .img_dog {
+    width: 100%;
+    height: 50vh; /* 🔹 ФИКСИРОВАННАЯ ВЫСОТА ДЛЯ КАРТИНКИ */
+    order: 1; /* 🔹 КАРТИНКА СВЕРХУ */
+  }
+
+  .intro_text {
+    width: 100%;
+    order: 2; /* 🔹 ТЕКСТ СНИЗУ */
+    padding: 2rem 1.5rem;
+    text-align: center; /* 🔹 ЦЕНТРИРУЕМ ТЕКСТ */
+  }
+
+  .intro_text_1 {
+    font-size: 2.5em;
+    padding: 0 0 1rem 0;
+  }
+
+  .intro_text_2 {
+    font-size: 1.3em;
+    padding: 1rem 0 0 0;
+  }
+
+  .pr {
+    text-underline-offset: 20%;
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* 🔹 АДАПТИВНОСТЬ ДЛЯ МАЛЕНЬКИХ ТЕЛЕФОНОВ (до 480px) */
+@media (max-width: 480px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .img_dog {
+    width: 100%;
+    height: 40vh; /* 🔹 МЕНЬШАЯ ВЫСОТА ДЛЯ КАРТИНКИ */
+    order: 1;
+  }
+
+  .intro_text {
+    width: 100%;
+    order: 2;
+    padding: 1.5rem 1rem;
+  }
+
+  .intro_text_1 {
+    font-size: 2em;
+    padding: 0 0 0.8rem 0;
+    line-height: 1.2;
+  }
+
+  .intro_text_2 {
+    font-size: 1.1em;
+    padding: 0.8rem 0 0 0;
+    line-height: 1.4;
+  }
+
+  .pr {
+    text-underline-offset: 15%;
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* 🔹 АДАПТИВНОСТЬ ДЛЯ ОЧЕНЬ МАЛЕНЬКИХ ЭКРАНОВ (до 320px) */
+@media (max-width: 320px) {
+  .img_dog {
+    height: 35vh;
+  }
+
+  .intro_text {
+    padding: 1rem 0.8rem;
+  }
+
+  .intro_text_1 {
+    font-size: 1.7em;
+  }
+
+  .intro_text_2 {
+    font-size: 1em;
+  }
+}
+

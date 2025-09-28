@@ -5,6 +5,7 @@ header {
   padding: 15px 0 15px;
   box-shadow: 0 4px 6px #b7b7b7;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -35,15 +36,163 @@ header {
   display: flex;
   list-style: none;
   gap: 0.3rem;
+  align-items: center;
 }
 
 .Icon, .logoIcon {
   color: #523d15;
 }
 
-.account {
+.menu_log {
   display: flex;
-  list-style: none;
   justify-self: end;
   margin-right: 7px;
 }
+
+.menu_button {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #523d15;
+  cursor: pointer;
+  padding: 0.5rem;
+  justify-self: end;
+  margin-right: 10px;
+}
+
+.mobile_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #FFFFFF;
+  box-shadow: 0 4px 6px #b7b7b7;
+  z-index: 1000;
+}
+
+.mobile_menu_content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.mobile_menu_item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 1rem;
+  color: #523d15;
+  text-decoration: none;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.mobile_menu_item:hover {
+  background-color: #f9f9f9;
+}
+
+.mobile_menu_item:last-child {
+  border-bottom: none;
+}
+
+.mobile_icon {
+  font-size: 1.2rem;
+}
+
+
+@media (max-width: 1024px) {
+  .menu {
+    gap: 0.8rem;
+  }
+
+  .menu_item {
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .menu_item li:last-child {
+    font-size: 0.9rem;
+  }
+
+  .logoIcon {
+    font-size: 26px;
+  }
+
+  .name_logo {
+    font-size: clamp(1rem, 3.5vw, 1.8rem);
+  }
+}
+
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .menu_button {
+    display: block;
+      justify-self: center;
+
+  }
+
+  .mobile_menu {
+    display: block;
+    order: 2;
+  }
+
+  .logo {
+    margin: 0 0 0 10px;
+  }
+
+  .logoIcon {
+    font-size: 22px;
+  }
+
+  .name_logo {
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+  }
+
+  .account {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 8px 0;
+  }
+
+  .logo {
+    margin: 0 0 0 5px;
+  }
+
+  .logoIcon {
+    font-size: 20px;
+  }
+
+  .name_logo {
+    font-size: clamp(1.1rem, 4.5vw, 1.5rem);
+  }
+
+  .mobile_menu_content {
+    padding: 0.8rem;
+  }
+
+  .mobile_menu_item {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+
+  .mobile_icon {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .name_logo {
+    font-size: clamp(1rem, 5vw, 1.4rem);
+  }
+}
+
